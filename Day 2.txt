@@ -1,0 +1,25 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ struct student 
+ {
+   int roll;
+   float marks;
+ }s;
+ struct student *ptr;
+ int n = 2;//'n' is number of student
+ for(int i=0; i<=n;i++)
+{ ptr= (struct student*) malloc(n* sizeof(struct student));
+ cout<<"enter the roll number";
+ cin>>ptr->roll;
+ cout<<"enter marks";
+ cin>>ptr->marks;
+ cout<< "student details:"<<ptr->roll <<endl <<ptr->marks;
+}
+ return(0);
+ 
+}
